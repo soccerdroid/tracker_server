@@ -6,4 +6,6 @@ from .models import *
 admin.site.register(User, UserAdmin)
 admin.site.register(Step, geoAdmin.OSMGeoAdmin)
 admin.site.register(Route, geoAdmin.OSMGeoAdmin)
+admin.site.register(LastLocation, geoAdmin.OSMGeoAdmin)
+
 

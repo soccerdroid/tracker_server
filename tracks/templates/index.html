@@ -11,21 +11,7 @@
 
 {% endblock %}
 {% block scripts_body %}
-   <script type="text/javascript">
-      var map = new ol.Map({
-        target: document.getElementById('mapdiv'),
-        layers: [
-          new ol.layer.Tile({
-            source: new ol.source.OSM()
-          })
-        ],
-        view: new ol.View({
-          center: ol.proj.fromLonLat([37.41, 8.82]),
-          zoom: 4,
-        })
-        
-      });
-    
-  </script>
+   
+  <script type= "text/javascript" src="{% static 'tracks/js/display_last_locations.js' %}"></script>
 	
 {% endblock %}
