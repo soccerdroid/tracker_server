@@ -1,0 +1,9 @@
+Django==2.1.7
+GDAL==2.1.0
+jsonfield==2.0.2
+pipenv==2018.11.26
+pycairo==1.16.2
+simplejson==3.16.0
+psycopg2==2.7.7
+channels
+asgi_redis

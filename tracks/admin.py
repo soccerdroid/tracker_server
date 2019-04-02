@@ -1,0 +1,9 @@
+from django.contrib import admin
+from django.contrib.auth.admin import UserAdmin
+import django.contrib.gis.admin as geoAdmin
+from .models import *
+
+admin.site.register(User, UserAdmin)
+admin.site.register(Step, geoAdmin.OSMGeoAdmin)
+admin.site.register(Route, geoAdmin.OSMGeoAdmin)
+

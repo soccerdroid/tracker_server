@@ -1,0 +1,7 @@
+{
+	"dbname":"tracker_db",
+	"user":"tracker",
+	"password":"comunitarias",
+	"host": "localhost",
+	"port": "5432"
+}
