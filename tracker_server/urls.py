@@ -24,10 +24,15 @@ from tracks import views
 
 router = routers.DefaultRouter()
 router.register(r'lastlocations', views.LastLocationViewSet)
+router.register(r'steps', views.StepViewSet)
+router.register(r'routes', views.RouteViewSet)
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.home, name='home'),
-    url(r'^api/', include(router.urls)),
+    url(r'^rutas/', views.rutas, name='rutas'),
+
+    url(r'^api/', include(router.urls), name='api'),
     url(r'^api-auth/', include('rest_framework.urls')),
 ]
